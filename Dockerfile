@@ -26,6 +26,7 @@ ENV PATH /esp/esp-idf/tools:$PATH
 
 RUN useradd -ms /bin/bash esp32-builder
 RUN groupmems --group dialout --add esp32-builder
+RUN groupmems --group ftp --add esp32-builder
 
 ADD ./skel/* /root/
 
