@@ -25,10 +25,11 @@ ENV PATH /esp/tools/python_env/idf4.0_py2.7_env/bin:$PATH
 ENV PATH /esp/esp-idf/tools:$PATH
 
 RUN useradd -ms /bin/bash esp32-builder
+RUN groupmems --group dialout --add esp32-builder
 
 ADD ./skel/* /root/
 
-# USER esp32-builder
+USER esp32-builder
 ADD ./skel/* /home/esp32-builder/
 VOLUME /esp/project
 
