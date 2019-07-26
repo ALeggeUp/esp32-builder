@@ -28,7 +28,7 @@ RUN useradd -ms /bin/bash esp32-builder
 
 ADD ./skel/* /root/
 
-USER esp32-builder
+# USER esp32-builder
 ADD ./skel/* /home/esp32-builder/
 VOLUME /esp/project
 
