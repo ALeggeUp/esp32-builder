@@ -3,7 +3,7 @@ Docker project to create an esp32 firmware builder
 
 # To use
 
-`docker run -it --rm --volume {full-path-to-project}:/esp/project:Z --device /dev/tty aleggeup/esp32-builder`
+`docker run -it --rm --volume {full-path-to-project}:/esp/project:Z --device /dev/tty{USB0} aleggeup/esp32-builder`
 
 and then from the container run
 
