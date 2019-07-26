@@ -1,6 +1,6 @@
 FROM fedora:29
 
-ARG VERSION=0.9.0
+ARG VERSION=v4.0-dev
 
 LABEL maintainer="Stephen Legge <stephen@aleggeup.com>"
 
